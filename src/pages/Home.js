@@ -44,13 +44,13 @@ const Home = () => {
         <h4 className="mainLabel">Paste invitation roomId</h4>
         <div className="inputGroup">
           <input
-            className="inputBox readOnly"
+            className="inputBox"
             type="text"
             placeholder="Room Id"
-            onChange={(e) => setRoomId(roomId)}
+            onChange={(e) => setRoomId(e.target.value)}
             value={roomId}
-            // onKeyUp={handleKeyEnter}
-            readOnly
+            onKeyUp={handleKeyEnter}
+            // readOnly
           />
           <input
             className="inputBox"
